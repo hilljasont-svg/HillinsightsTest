@@ -15,7 +15,7 @@
 
 .hi-hero {
   background: linear-gradient(135deg, var(--hi-slate), var(--hi-navy));
-  color: white;
+  color: black;
   padding: 96px 0;
 }
 
