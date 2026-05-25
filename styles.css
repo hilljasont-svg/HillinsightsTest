@@ -93,7 +93,7 @@ img {
 
 .hero-section {
   background:
-    linear-gradient(rgba(62, 80, 96, 0.84), rgba(200, 155, 60, 0.72));
+    linear-gradient(135deg, var(--gold), var(--slate));
   min-height: 92vh;
   display: flex;
   align-items: center;
