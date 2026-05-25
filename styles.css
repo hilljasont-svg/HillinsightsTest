@@ -1,0 +1,138 @@
+ :root {
+  --hi-navy: #C89B40;
+  --hi-slate: #3e5060;
+  --hi-ink: #1f2933;
+  --hi-muted: #f4f1ec;
+  --hi-paper: #fffaf3;
+  --hi-border: #d8d0c4;
+}
+
+.hi-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hi-hero {
+  background: linear-gradient(135deg, var(--hi-slate), var(--hi-navy));
+  color: white;
+  padding: 96px 0;
+}
+
+.hi-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+.hi-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.75rem);
+  line-height: 1.05;
+  margin: 0 0 24px;
+  max-width: 900px;
+}
+
+.hi-lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.hi-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hi-button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.hi-button.primary {
+  background: var(--hi-paper);
+  color: var(--hi-navy);
+}
+
+.hi-button.secondary {
+  border: 1px solid rgba(255,255,255,0.7);
+  color: white;
+}
+
+.hi-section {
+  padding: 72px 0;
+  background: var(--hi-paper);
+  color: var(--hi-ink);
+}
+
+.hi-section h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  color: var(--hi-navy);
+}
+
+.hi-section p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 850px;
+}
+
+.hi-muted {
+  background: var(--hi-muted);
+}
+
+.hi-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.hi-card {
+  background: white;
+  border: 1px solid var(--hi-border);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(31, 41, 51, 0.08);
+}
+
+.hi-card h3 {
+  margin-top: 0;
+  color: var(--hi-navy);
+  font-size: 1.2rem;
+}
+
+.hi-card p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .hi-card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hi-hero {
+    padding: 72px 0;
+  }
+
+  .hi-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hi-actions {
+    flex-direction: column;
+  }
+
+  .hi-button {
+    text-align: center;
+  }
+}
