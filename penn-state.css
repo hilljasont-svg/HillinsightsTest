@@ -202,12 +202,20 @@ h3 {
   text-decoration: none;
   transition: 0.2s;
 }
-.work-card:hover,
-.work-card:focus-visible {
+a.work-card:hover,
+a.work-card:focus-visible {
   color: var(--ink);
   border-color: var(--accent);
   box-shadow: 0 14px 34px #26343c1c;
   transform: translateY(-4px);
+}
+.work-card.current-work {
+  border-color: var(--accent);
+  background: var(--mist);
+  box-shadow: none;
+}
+.work-card.current-work .read-more {
+  color: var(--slate);
 }
 .work-card .label {
   margin-bottom: 1.5rem;
@@ -226,6 +234,9 @@ h3 {
   color: var(--accent-dark);
   font-size: 0.88rem;
   font-weight: 700;
+}
+.work-navigation {
+  border-top: 1px solid var(--line);
 }
 .cv-link {
   margin-top: 1.8rem;
