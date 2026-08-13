@@ -32,7 +32,7 @@ a:hover, a:focus-visible { color: var(--accent); }
 .brand { display: inline-flex; align-items: center; gap: 14px; color: var(--ink); text-decoration: none; }
 .brand:hover, .brand:focus-visible { color: var(--ink); }
 .brand-logo { width: auto; height: 52px; object-fit: contain; }
-.brand-text { color: var(--slate); font: 600 2rem/1 Inter, Arial, sans-serif; }
+.brand-text { color: var(--ink); font: 600 2.15rem/1 "Cormorant Garamond", Georgia, serif; }
 .site-nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 2rem; }
 .site-nav a { color: var(--ink); font-size: 0.98rem; font-weight: 600; letter-spacing: 0.01em; text-decoration: none; }
 .site-nav a:hover, .site-nav a:focus-visible, .site-nav a[aria-current="page"] { color: var(--accent); }
@@ -64,6 +64,13 @@ a:hover, a:focus-visible { color: var(--accent); }
 .muted-section { background: var(--mist); }
 .content-section h2 { margin-bottom: 1.6rem; font-size: clamp(2.7rem, 5vw, 4.25rem); font-weight: 600; letter-spacing: -.025em; line-height: 1.08; }
 .content-section p { margin-bottom: 1.5rem; color: var(--slate); font-size: 1.08rem; }
+.editorial-section { display: grid; grid-template-columns: minmax(260px,.72fr) minmax(0,1.45fr); gap: 6rem; align-items: start; }
+.editorial-heading { padding-top: .2rem; border-top: 3px solid var(--accent); }
+.editorial-heading .section-label { margin: 1.25rem 0 .75rem; }
+.editorial-heading h2 { margin-bottom: 0; }
+.editorial-copy { max-width: 760px; padding-top: .1rem; }
+.editorial-copy p { margin-bottom: 1.35rem; }
+.editorial-copy .editorial-lede { color: var(--ink); font-size: 1.24rem; line-height: 1.7; }
 .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.25rem; }
 .info-card { padding: 1.9rem; border: 1px solid var(--line); border-radius: 0; background: #fff; box-shadow: 0 8px 28px rgba(38,52,60,.05); transition: .2s ease; }
 .info-card:hover { border-color: var(--accent); box-shadow: 0 14px 34px rgba(38,52,60,.1); transform: translateY(-4px); }
@@ -126,6 +133,7 @@ a:hover, a:focus-visible { color: var(--accent); }
   .container, .hero-content { width: min(calc(100% - 3rem), var(--max)); }
   .card-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .focus-hero-grid, .focus-detail-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+  .editorial-section { grid-template-columns: minmax(220px,.65fr) minmax(0,1.35fr); gap: 3.5rem; }
   .focus-heading-column { position: static; }
   .focus-heading-column h2, .focus-summary { max-width: 720px; }
 }
@@ -142,6 +150,9 @@ a:hover, a:focus-visible { color: var(--accent); }
   .hero-content, .focus-hero { padding-top: 4.5rem; }
   .hero-content { padding-bottom: 4.5rem; }
   .content-section, .focus-detail-section { padding: 4.75rem 0; }
+  .editorial-section { grid-template-columns: 1fr; gap: 1.5rem; }
+  .editorial-heading { max-width: 100%; }
+  .editorial-copy { max-width: none; }
   .card-grid, .focus-jump-nav, .confidentiality-content { grid-template-columns: 1fr; }
   .focus-card { min-height: 250px; }
   .focus-hero-grid { padding-bottom: 4rem; }
