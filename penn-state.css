@@ -65,6 +65,10 @@ a:focus-visible {
   justify-content: space-between;
   gap: 1.5rem;
 }
+.header-inner > .brand,
+.header-inner > .site-nav {
+  transform: translateY(10px);
+}
 .brand {
   display: inline-flex;
   align-items: center;
@@ -395,6 +399,10 @@ a.work-card:focus-visible {
   }
   .header-inner {
     padding: 1rem 0;
+  }
+  .header-inner > .brand,
+  .header-inner > .site-nav {
+    transform: none;
   }
   .site-header {
     position: static;
