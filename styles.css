@@ -123,7 +123,11 @@ a:hover, a:focus-visible { color: var(--accent); }
 .experience-panel p:last-child { margin-bottom: 0; color: var(--slate); font-size: 1.06rem; line-height: 1.75; }
 .practice-example { margin-top: 3.3rem; padding: 2.25rem; border: 1px solid var(--line); border-top: 3px solid var(--accent); background: #fff; box-shadow: 0 8px 28px rgba(38,52,60,.06); }
 .alternate-section .practice-example { background: var(--warm); }
-.practice-example p:last-child { margin-bottom: 0; color: var(--slate); line-height: 1.8; }
+.practice-example > p:not(.section-label) { color: var(--ink); font-size: 1rem; line-height: 1.8; }
+.practice-example > p:last-child { margin-bottom: 0; }
+.working-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .8rem 2.5rem; margin: 2rem 0; padding: 0; list-style: none; }
+.working-list li { position: relative; padding-left: 1.25rem; color: var(--ink); font-size: .96rem; font-weight: 600; line-height: 1.55; }
+.working-list li::before { position: absolute; left: 0; color: var(--accent-dark); content: "–"; }
 .method-list { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.7rem; padding: 0; list-style: none; }
 .method-list li { padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 0; color: var(--slate); background: transparent; font-size: .79rem; font-weight: 700; }
 .focus-contact-section { padding: 6.5rem 0; background: radial-gradient(circle at 88% 18%, rgba(154,114,80,.13), transparent 27rem), linear-gradient(135deg,#f7f8f7,#eef2f1); }
@@ -163,5 +167,6 @@ a:hover, a:focus-visible { color: var(--accent); }
   .confidentiality-content { gap: .5rem; }
   .focus-detail-section { scroll-margin-top: 0; }
   .experience-panel, .practice-example { padding: 1.5rem; }
+  .working-list { grid-template-columns: 1fr; gap: .65rem; }
   .focus-contact-section { padding: 5rem 0; }
 }
