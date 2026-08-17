@@ -109,7 +109,10 @@ a:hover, a:focus-visible { color: var(--accent); }
 .confidentiality-content .section-label { color: #c49b78; }
 .confidentiality-content p { margin-bottom: 0; color: #e7eceb; }
 .confidentiality-content p:last-child { max-width: 820px; font-size: .98rem; line-height: 1.75; }
-.process-consultation-strip .confidentiality-content p:last-child { max-width: 940px; font-size: 1.04rem; }
+.process-consultation-strip { border-top: 3px solid var(--accent); }
+.process-consultation-strip .confidentiality-content { display: block; }
+.process-consultation-strip h2 { margin-bottom: 1rem; color: #fff; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(2.2rem,4vw,3.2rem); font-weight: 600; letter-spacing: -.02em; line-height: 1.08; }
+.process-consultation-strip .confidentiality-content p:last-child { max-width: 980px; color: #e7eceb; font-size: 1.04rem; line-height: 1.8; }
 .focus-detail-section { padding: 7.5rem 0; scroll-margin-top: 92px; }
 .alternate-section { background: var(--mist); }
 .transformation-section { background: radial-gradient(circle at 10% 45%, rgba(154,114,80,.07), transparent 25rem), var(--paper); }
