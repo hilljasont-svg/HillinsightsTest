@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Weekly Shopping List | Hill Insights</title>
+<link rel="icon" href="/favicon.png">
+<style>
+:root{color-scheme:light;--navy:#182d40;--copper:#995f3d;--paper:#f6f4ef;--line:#deddd6}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--navy);font:16px/1.6 system-ui,sans-serif}
+main{max-width:720px;margin:auto;padding:28px 20px 56px}.brand{font:26px Georgia,serif;color:var(--navy);text-decoration:none}
+header{border-bottom:1px solid var(--line);padding-bottom:20px}h1{font:clamp(34px,7vw,48px)/1.15 Georgia,serif;margin:30px 0 12px}h2{font:26px Georgia,serif;margin:0 0 12px}
+.sub{color:#52616b}.tag{color:var(--copper);font-weight:650;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-top:28px}
+.panel{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;margin-top:20px}.row{display:flex;gap:14px;align-items:center;padding:17px 0;border-bottom:1px solid var(--line);cursor:pointer}.row:last-child{border:0}
+input[type=checkbox]{width:25px;height:25px;accent-color:var(--copper);flex-shrink:0}.item{display:block;font-weight:650}.detail{display:block;color:#52616b;font-size:14px}label:has(input:checked) .item{text-decoration:line-through;color:#748079}
+button{font:inherit;cursor:pointer;border:1px solid var(--navy);border-radius:8px;padding:9px 15px;background:white;color:var(--navy)}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--copper);outline-offset:4px}
+.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}progress{width:100%;height:9px;accent-color:var(--copper);margin:12px 0 0}
+ol,ul{padding-left:23px}li{margin:10px 0}a{color:var(--copper)}.note{font-size:14px;color:#52616b}.meal{padding:12px 0}.meal+.meal{border-top:1px solid var(--line)}footer{margin-top:28px}
+@media print{button,header,footer{display:none}.panel{break-inside:avoid}body{background:white}}
+</style>
+</head>
+<body><main>
+<header><a class="brand" href="/">Hill Insights</a></header>
+<div class="tag">Weekly meal prep · Test run</div>
+<h1>Five lunches.<br>One shopping list.</h1>
+<p class="sub">Prep once, portion into five containers, and microwave at lunchtime. Quantities below cover one person for five lunches.</p>
+<section class="panel" aria-labelledby="shopping-heading">
+<div class="toolbar"><h2 id="shopping-heading">Shopping list</h2><button id="reset" type="button">Uncheck all</button></div>
+<p id="count" role="status" aria-live="polite"></p><progress id="progress" max="5" value="0" aria-label="Shopping progress"></progress>
+<div id="items">
+<label class="row"><input type="checkbox" data-key="chicken"><span><span class="item">Chicken breasts · 1½ lb raw</span><span class="detail">Three lunches; 8 oz raw chicken per portion.</span></span></label>
+<label class="row"><input type="checkbox" data-key="turkey"><span><span class="item">Ground turkey · 1 lb raw</span><span class="detail">Two lunches; 8 oz raw turkey per portion.</span></span></label>
+<label class="row"><input type="checkbox" data-key="rice"><span><span class="item">90-second rice · 3 pouches, about 8.8 oz each</span><span class="detail">One pouch per chicken lunch. Heat separately when eating.</span></span></label>
+<label class="row"><input type="checkbox" data-key="potatoes"><span><span class="item">Sweet potatoes · 1 lb</span><span class="detail">Split between two turkey lunches; 8 oz raw potato per portion.</span></span></label>
+<label class="row"><input type="checkbox" data-key="broccoli"><span><span class="item">Broccoli · 2 lb</span><span class="detail">Fresh or frozen; divide across all five lunches.</span></span></label>
+</div>
+<p class="note">Check your pantry: olive oil, salt, pepper, and preferred seasoning. No eggs, peanuts, or tree nuts included. Check packaged-food labels and cross-contact information for the severe nut allergy.</p>
+<p class="note" id="save-note">Checkmarks save automatically in this browser on this device.</p>
+</section>
+<section class="panel"><h2>The five lunches</h2>
+<div class="meal"><strong>Monday–Wednesday · Chicken, broccoli, and rice</strong><br>Divide cooked chicken into three containers. Add one-fifth of the broccoli to each. Keep rice pouches unopened until lunchtime.</div>
+<div class="meal"><strong>Thursday–Friday · Turkey, sweet potatoes, and broccoli</strong><br>Divide cooked turkey and sweet potatoes between two containers. Add half of the remaining broccoli to each.</div>
+<p class="note">Weights above refer to food before cooking. Portions provide a practical starting point; adjust future batches to appetite. Freeze any extra raw meat purchased in a larger pack.</p>
+</section>
+<section class="panel"><h2>Prep once</h2>
+<ol>
+<li><strong>Roast the sweet potatoes.</strong> Dice, toss with a little olive oil and seasoning, and roast at 425°F for about 25–35 minutes, turning once, until tender.</li>
+<li><strong>Cook the chicken.</strong> Season and bake on a separate tray at 425°F, checking around 20 minutes. Time varies with thickness; cook to 165°F in the thickest part.</li>
+<li><strong>Brown the turkey.</strong> Cook in a skillet, breaking it apart and adding seasoning, until it reaches 165°F.</li>
+<li><strong>Cook the broccoli.</strong> Steam or microwave following package directions, then divide evenly among five shallow, freezer-safe, microwave-safe containers.</li>
+<li><strong>Portion and store promptly.</strong> Add the chicken to three containers and turkey with sweet potatoes to two. Label with prep date. Refrigerate the first three lunches and freeze the last two on prep day. Refrigerate or freeze within two hours of cooking, or one hour above 90°F. Keep the refrigerator at 40°F or below.</li>
+</ol></section>
+<section class="panel"><h2>Microwave and eat</h2>
+<p>Move a frozen lunch to the refrigerator the night before. Add a splash of water, cover loosely with a microwave-safe lid, and heat. Stir or rearrange halfway through; continue until food reaches 165°F throughout. Microwave times vary with portion size and appliance.</p>
+<p>For chicken lunches, heat the rice pouch following its directions and add it after reheating the chicken and broccoli.</p>
+<p class="note">Use refrigerated cooked portions within 3–4 days. <a href="https://www.foodsafety.gov/keep-food-safe/4-steps-to-food-safety" target="_blank" rel="noopener noreferrer">FoodSafety.gov: storage and reheating guidance</a>.</p>
+</section>
+<footer class="note">Weekly lunch plan · Hill Insights</footer>
+</main>
+<script>
+(function(){
+'use strict';
+var key='hillinsights-shoppinglist-v1';
+var boxes=Array.from(document.querySelectorAll('[data-key]'));
+var count=document.getElementById('count');
+var progress=document.getElementById('progress');
+var note=document.getElementById('save-note');
+function update(){var checked=boxes.filter(function(box){return box.checked;}).length;count.textContent=checked+' of '+boxes.length+' items checked';progress.value=checked;}
+function persist(){var state={};boxes.forEach(function(box){state[box.dataset.key]=box.checked;});try{localStorage.setItem(key,JSON.stringify(state));}catch(e){note.textContent='Browser storage unavailable. Checkmarks will last only while this page stays open.';}update();}
+try{var state=JSON.parse(localStorage.getItem(key)||'{}')||{};boxes.forEach(function(box){box.checked=state[box.dataset.key]===true;});}catch(e){note.textContent='Saved checkmarks unavailable in this browser.';}
+boxes.forEach(function(box){box.addEventListener('change',persist);});
+document.getElementById('reset').addEventListener('click',function(){if(boxes.some(function(box){return box.checked;})&&confirm('Uncheck every shopping item?')){boxes.forEach(function(box){box.checked=false;});persist();}});
+update();
+})();
+</script></body></html>
